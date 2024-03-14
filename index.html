@@ -1,0 +1,1776 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>golden-fields</title>
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"
+    ></script>
+
+
+    <!-- for fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Raleway&display=swap"
+        rel="stylesheet">
+
+  </head>
+  <body>
+    <style>
+
+      body{
+        overflow-x: hidden;
+
+        font-family: Poppins, sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue !important;
+color:black;
+      }
+/* nav-bar */
+
+.navbar {
+  background-color: transparent;
+}
+
+.navbar-scrolled {
+  background-color: transparent; 
+  opacity: .9;
+}
+.nav-image{
+    height: 100px;
+}
+.nav-f-all{
+    font-weight: bold;
+    font-size: 20px;
+    /* color: white; */
+}
+
+.nav-back{
+    
+}
+.scrolled {
+    /* background-color:rgb(211, 143, 16);  */
+    /* background-color:#9f4103; */
+    /* background-color: rgb(230, 226, 226);
+    opacity: .9; */
+
+    
+  }
+  .text-white .nav-link {
+    /* color: white !important; */
+    color: black !important;
+
+  }
+  .navbar-toggler-icon {
+    border: none; /* Remove border around nav bar icon */
+  }.nav-image{
+    height: 100px;
+}
+.nav-f-all{
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+.nav-back{
+    
+}
+.scrolled {
+    /* background-color:rgb(211, 143, 16);  */
+    /* background-color:#9f4103; */
+    /* background-color: rgb(230, 226, 226);
+    opacity: .9; */
+
+    
+  }
+  .text-white .nav-link {
+    /* color: white !important; */
+    color: black !important;
+
+  }
+  .navbar-toggler-icon {
+    border: none; /* Remove border around nav bar icon */
+  }
+      /* carosal */
+      .main-h1-text {
+        color: white;
+        /* color: #9f4103; */
+        font-size: 58px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .main-h1-s {
+        padding-bottom: 250px;
+      }
+
+      .main-head-s-2 {
+        padding-bottom: 250px;
+      }
+
+      .main-header-text-2 {
+        color: white;
+        /* color: #9f4103; */
+        font-size: 58px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .dry-h1 {
+        font-size: 50px;
+        font-weight: bold;
+        color: #1d2228;
+        padding-top: 90px;
+      }
+
+      .dry-h-1-s {
+        font-size: 50px;
+        font-weight: bold;
+        color: #9f4103;
+      }
+      .dry-h2 {
+        font-style: 22px;
+        color: #9f4103;
+        font-weight: bold;
+      }
+      .dry-img-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 600px;
+      }
+      .dry-p-1 {
+        color: #515151;
+      }
+      .dry-btn-1 {
+        font-weight: bold;
+        background-color: #9f4103;
+        border: transparent;
+      }
+      .dry-btn-1:hover {
+        background-color: #9f4103;
+        border: transparent;
+      }
+      .dry-back-img {
+        background-image: url(../image/pattern.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      .dry-icons {
+        font-size: 28px;
+        color: #9f4103;
+      }
+
+      /* riview */
+
+      .rev-back-img {
+        background-image: url(./image/n.gif);
+        background-repeat: no-repeat;
+        /* background-position: center; */
+        background-size: cover;
+        width: 100%;
+        height: 400px;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+
+      /* banner */
+      .back-maps {
+        background-image: linear-gradient(
+            rgba(2, 1, 1, 0),
+            rgba(133, 80, 2, 0.9)
+          ),
+          url(./image/pattern.jpg);
+
+        background-repeat: no-repeat;
+
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        background-attachment: fixed;
+        background-size: cover;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .banner-img-1 {
+        height: 450px;
+        width: 500px;
+      }
+      .banner-text {
+        color: white;
+      }
+
+      .plant {
+      }
+
+      .banner-final-img- {
+      }
+
+      .banner-final-img-c {
+      }
+
+      .final-banner-alin {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-image: url(./image/pattern.jpg);
+      }
+
+      .banner-left {
+        width: 100px;
+        height: 100px;
+      }
+
+      .amazon-heading {
+        color: black;
+        /* color: white; */
+        font-size: 50px;
+        font-weight: bold;
+      }
+
+      .amazon-heading-001 {
+        color: #9f4103;
+        /* color: white; */
+        font-size: 50px;
+        font-weight: bold;
+      }
+      .banner-head-text-back-img {
+        color: #9f4103;
+        font-weight: bold;
+      }
+
+      .r-gif {
+        background-image: url(./image/ro\ gif.gif);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      .star-fall {
+        background-image: url(./image/1820684_f0765.gif);
+      }
+
+
+      /* sub-heading */
+
+
+      .final-banner-alin{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url(./image/pattern.jpg);
+}
+.sub-img{
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 50%; */
+    border-radius: 44px;
+
+    
+    
+}
+
+.sub-img-s{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 50%; */
+    border-radius: 44px;
+
+}
+
+
+.sub-head-h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+.sub-2-head-h1{
+    font-size: 50px;
+    font-weight: bold;
+    color:#9f4103;
+
+}
+
+.sub-heat-text-col{
+    color:#9f4103;
+
+}
+
+.high-quality{
+    font-size: 50px;
+    font-weight: bold;
+}
+.high-quality-2{
+    font-size: 50px;
+    font-weight: bold;
+    color:#9f4103;
+}
+
+.img-3-centerss{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.img-text-explain{
+    border-radius: 5px 70px; 
+}
+.text-explain{
+    color:#9f4103;
+
+}
+
+
+
+/* products */
+
+.pa-22{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.img-size{
+  height: 240px;
+  width: 400px;
+  /* border-radius: 40px; */
+}
+.total-oroduct-back{
+  background-image: url(./image/pattern.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Add this CSS to your style.css file */
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.type-writing {
+  font-size: 50px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.type2-writing{
+  font-size: 50px;
+  font-weight: bold;
+  color:#9f4103;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.main-product-div-col {
+  position: relative;
+  
+
+}
+
+/* Make the image to responsive */
+.img-size {
+  /* display: block; */
+  /* width: 100%; */
+
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.main-product-div-col:hover .overlay {
+   opacity: 4; 
+}
+.product-nav-tab-heading{
+  color: #9f4103;
+}
+.product-nav-tab-heading:hover{
+  color: black;
+} 
+
+
+
+/* you-model */
+
+.ad-you-back-img{
+    background-image: url(./image/trigo-clipart.png);
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1000px;
+}
+.you-contact{
+    padding-top: 70px;
+    font-size: 54px;
+    /* color: white; */
+    color: #9f4103; 
+
+    font-weight: bold;
+}
+.you-contact-2{
+    font-size: 54px;
+    font-weight: bold;
+    color: #9f4103; 
+
+}
+
+.i-cons-01{
+    font-size: 30px;
+    color:black; 
+    /* color: #9f4103;  */
+
+
+}
+.i-cons-text-01{
+    font-size: 30px;
+    color:black; 
+    /* color: #9f4103;  */
+
+    font-weight: bold;
+
+}
+.you-img-create{
+    height: 400px;
+    padding-right: 80px;
+    
+}
+.you-img-create-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.total-you-bk-1{
+    background-image: url(./image/pattern.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* footer */
+
+
+.footer-img-size{
+
+height: 200px;
+}
+
+.butter-fly{
+display: flex;
+justify-content: end;
+align-items: end;
+height: 20px;
+
+
+
+
+}
+
+.butter-fly-1{
+height: 100px;
+
+
+}
+
+.footer-total-bk{
+background-image: url(./Image/new-san.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+} 
+
+
+      /* Media query for screens smaller than 768 pixels */
+      @media screen and (max-width: 767px) {
+        .main-header-back {
+          width: 100%;
+          height: 200px;
+
+          background-size: cover;
+          background-repeat: no-repeat;
+          opacity: 0.7;
+        }
+        .header-box-img {
+          height: 200px;
+          width: 100%;
+        }
+
+        .main-h1-text {
+          color: white;
+          /* color: #9f4103; */
+          font-size: 20px;
+          font-weight: bold;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .dry-img-1 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 250px;
+        }
+
+        .dry-h1 {
+          font-size: 20px;
+          font-weight: bold;
+          color: #1d2228;
+          padding-top: 2px;
+        }
+
+        .dry-h-1-s {
+          font-size: 20px;
+          font-weight: bold;
+          color: #9f4103;
+        }
+
+
+        /* sub-heading */
+
+        .sub-head-h1{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .sub-2-head-h1{
+        font-size: 20px;
+        font-weight: bold;
+        color:#9f4103;
+    
+    }
+    .sub-img{
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 44px;
+    }
+
+    .sub-img-s{
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 44px;
+
+    }
+
+    .high-quality{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .high-quality-2{
+        font-size: 20px;
+        font-weight: bold;
+        color:#9f4103;
+    }
+    .nutz-gig-img{
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+
+
+    /* products */
+
+    /* .type-writing {
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .type2-writing{
+    font-size: 20px;
+    font-weight: bold;
+    color:#9f4103;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+
+  .total-oroduct-back{
+    display: none;
+  }
+
+  /* you-model */
+
+  /* .you-contact{
+        padding-top: 70px;
+        font-size: 20px;
+        color: white;
+        font-weight: bold;
+    }
+    .you-contact-2{
+        font-size: 20px;
+        font-weight: bold;
+        color: #9f4103; 
+    
+    }
+    .i-cons-01{
+        font-size: 20px;
+        color:white; 
+    
+    }
+    .i-cons-text-01{
+        font-size: 20px;
+        color:white; 
+        font-weight: bold;
+    
+    }
+    .ad-you-back-img{
+        background-image: url(./image/pexels-pixabay-209371.jpg);
+    
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 340px;
+    } */
+
+    .ad-you-back-img{
+display: none;
+    }
+
+    .butter-fly-1{
+        display: none;
+    }
+    
+
+  
+      }
+
+      /* Media query for screens between 768 and 1024 pixels */
+      @media screen and (min-width: 768px) and (max-width: 1023px) {
+        .main-header-back {
+          width: 280px;
+          height: 200px;
+          background-size: cover;
+          background-repeat: no-repeat;
+          opacity: 0.7;
+        }
+
+        .header-box-img {
+          height: 200px;
+          width: 100%;
+        }
+        .main-h1-text {
+          color: white;
+          /* color: #9f4103; */
+          font-size: 20px;
+          font-weight: bold;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .dry-img-1 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 300px;
+        }
+
+        .dry-h1 {
+          font-size: 20px;
+          font-weight: bold;
+          color: #1d2228;
+          padding-top: 2px;
+        }
+
+        .dry-h-1-s {
+          font-size: 20px;
+          font-weight: bold;
+          color: #9f4103;
+        }
+
+/* sub-heading */
+
+.sub-head-h1{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .sub-2-head-h1{
+        font-size: 20px;
+        font-weight: bold;
+        color:#9f4103;
+    
+    }
+
+    .sub-img{
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .sub-img-s{
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .high-quality{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .high-quality-2{
+        font-size: 20px;
+        font-weight: bold;
+        color:#9f4103;
+    }
+
+    .nutz-gig-img{
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    /* products */
+
+    /* .type-writing {
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .type2-writing{
+    font-size: 20px;
+    font-weight: bold;
+    color:#9f4103;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+
+  .total-oroduct-back{
+    display: none;
+  }
+
+
+  /* you-model */
+  /* .you-contact{
+        padding-top: 70px;
+        font-size: 20px;
+        color: white;
+        font-weight: bold;
+    }
+    .you-contact-2{
+        font-size: 20px;
+        font-weight: bold;
+        color: #9f4103; 
+    
+    }
+
+    .i-cons-01{
+        font-size: 20px;
+        color:white; 
+    
+    }
+    .i-cons-text-01{
+        font-size: 20px;
+        color:white; 
+        font-weight: bold;
+    
+    }
+    .ad-you-back-img{
+        background-image: url(./image/pexels-pixabay-209371.jpg);
+    
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 500px;
+        width: 100%; 
+    }*/
+
+    .ad-you-back-img{
+display: none;
+    }
+    .butter-fly-1{
+        display: none;
+    }
+  
+      }
+
+      /* Media query for screens larger than 1024 pixels */
+      @media screen and (min-width: 1024px) {
+      }
+    </style>
+
+<!-- nav-bar -->
+<!-- <nav class="navbar navbar-expand-lg bg-body-tertiary nav-back fixed-top" id="navbar">
+
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img class="nav-image" src="./image/Logo.png" alt="logo" />
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav mx-auto my-2 my-lg-0 nav-f-all" style="max-height: 100px;">
+        <li class="nav-item">
+
+        </li>
+        <li class="nav-item">
+          
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle mx-2" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Link</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+            <li><a class="dropdown-item" href="#action3">Action</a></li>
+            <li><a class="dropdown-item" href="#action4">Another action</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#action5">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mx-2" href="#" disabled>Link</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav> -->
+
+    <!-- carousel -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <video autoplay muted loop class="d-block w-100">
+            <source src="./image/video-1.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div class="carousel-caption d-none d-md-block">
+            <div class="main-h1-s">
+              <h1 class="main-h1-text">Golden Fields</h1>
+
+              <p class="main-p-1">A Blend of Goodness</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <video autoplay muted loop class="d-block w-100">
+            <source src="./image/video-1.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div class="carousel-caption d-none d-md-block">
+            <div class="main-head-s-2">
+              <h5 class="main-header-text-2">Multi - Grain Superfood</h5>
+              <p>100% Natural & Wholesome</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- dry-food -->
+
+    <div class="container-fluid dry-back-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div data-aos="fade-right" data-aos-duration="1000">
+              <img
+                class="img-fluid dry-img-1 mt-5 mb-5"
+                src="./image/5da0343d3dc1e916a8394a57_1570780221722.jpg"
+                alt="Dry Food"
+              />
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div data-aos="fade-left">
+              <h1 class="dry-h1 mt-5">
+                We Have <span class="dry-h-1-s">35 Years</span> Of Experience
+              </h1>
+              <h2 class="dry-h2 mt-3">
+                We Provide The Best Spices in The Market.
+              </h2>
+              <p class="mt-2 dry-p-1">
+                Lorem Ipsum is simply dummy text of free available in market the
+                printing and typesetting industry has been the industry's
+                standard dummy text ever.
+              </p>
+              <p>
+                <i class="fa-solid fa-check-double dry-icons"></i> Nsectetur
+                cing elit
+              </p>
+              <p>
+                <i class="fa-solid fa-check-double dry-icons"></i> Nsectetur
+                cing elit.
+              </p>
+              <p>
+                <i class="fa-solid fa-check-double dry-icons"></i> Nsectetur
+                cing elit.
+              </p>
+              <button class="dry-btn-1 px-4 py-2 mb-4">Warning</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- review -->
+
+    <div class="container-fluid rev-back-img"></div>
+
+    <!-- banner -->
+
+    <div class="container-fluid">
+      <div class="">
+        <div class="row back-maps p-0 m-0">
+          <div
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
+            <h1 class="text-center amazon-heading mt-3 mb-3">
+              We are in <span class="amazon-heading-001">Amazon</span> Now
+            </h1>
+          </div>
+          <div
+            class="col-lg-5 text-center banner-text banner-right star-fall order-lg-1 order-2"
+          >
+            <div data-aos="zoom-in-right">
+              <h2 class="banner-head-text-back-img">Our Story</h2>
+              <p>
+                Founded with a passion for health and a deep appreciation for
+                traditional Indian ingredients, Golden Fields was born out of a
+                desire to reconnect with our roots and promote holistic
+                well-being. Drawing inspiration from the wisdom of Ayurveda and
+                the rich culinary heritage of India, we embarked on a journey to
+                create a product that would not only satisfy hunger but also
+                nurture vitality.
+              </p>
+              <button
+                class="dry-btn-1 px-4 py-2"
+                onclick="window.open('https://www.amazon.in/Multigrain-Nutrition-Natural-Ingredients-Porridge/dp/B09BTX1XTB/ref=sr_1_1?crid=NJMTVX7U8RCQ&dib=eyJ2IjoiMSJ9.SZx4fs0x1N1OLS6nT_jwQSZ9w0mxQG5IuwkBpAvja4f_NLLwk2o1Wl6zLHjw42kW1-f1_JNVPoMSUZnjHZUUtJG9PAn5jUaFbSdzrC2p0E3IgIS2QhtR9yj-CGFF6Vm3ZBguABSIIN5xuKAfdjnpVwBLL6eSUk8MKtk5d_GKMDFP2BqJa0MeTwkheNxW60RalEXhsK5fATWy2q4KeTyhGULa1Am8funBiSWlhygWTgI.gCpeRImUxa6C0YGLJ8zeSCEWtiB66HZVNY9woOtln4g&dib_tag=se&keywords=golden+fields&qid=1709534010&sprefix=%2Caps%2C215&sr=8-1')"
+              >
+                For Order
+              </button>
+            </div>
+          </div>
+          <div class="col order-lg-2 order-1 col-lg-5 col-md-6 col-sm-12">
+            <div>
+              <div data-aos="flip-left">
+                <img
+                  class="img-fluid banner-img-1 mt-5 banner-center star-fall"
+                  src="./image/2-it.png"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row back-maps p-0 m-0">
+          <div class="col-lg-5 col-md-6 col-sm-12 star-fall">
+            <div>
+              <div data-aos="flip-right">
+                <img
+                  class="img-fluid banner-img-1 mt-5"
+                  src="./image/PRODUCT BOX.png"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 text-center banner-text banner-right star-fall">
+            <div data-aos="zoom-out">
+              <h2 class="banner-head-text-back-img">Our Story</h2>
+              <p>
+                Founded with a passion for health and a deep appreciation for
+                traditional Indian ingredients, Golden Fields was born out of a
+                desire to reconnect with our roots and promote holistic
+                well-being. Drawing inspiration from the wisdom of Ayurveda and
+                the rich culinary heritage of India, we embarked on a journey to
+                create a product that would not only satisfy hunger but also
+                nurture vitality.
+              </p>
+              <button
+                class="dry-btn-1 px-4 py-2"
+                onclick="window.open('https://www.amazon.in/Golden-Fields-Multigrain-Natural-Millets/dp/B099NFV3DR/ref=sr_1_1?crid=3DTB0LA21ZBVO&keywords=golden+fields&qid=1708329312&sprefix=%2Caps%2C208&sr=8-1')"
+              >
+                Warning
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="row back-maps p-0 m-0">
+          <div class="col-lg-5 col-md-6 col-sm-12 star-fall">
+            <div data-aos="flip-down">
+              <img
+                class="img-fluid banner-img-1 mt-5 mb-5"
+                src="./image/5-removebg-preview.png"
+              />
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-12 star-fall">
+            <div>
+              <div data-aos="flip-down">
+                <img
+                  class="img-fluid banner-img-1 mt-5 mb-5 star-fall final-side-img-w"
+                  src="./image/Side01.png"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 text-center banner-text star-fall">
+            <div data-aos="flip-down">
+              <img
+                class="img-fluid banner-img-1 mt-5 mb-5 final-side-img-w"
+                src="./image/Side02.png"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- sub-heading -->
+    <div class="final-banner-alin container-fluid">
+      <div class="container">
+        <div>
+          <div
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
+            <h2 class="sub-head-h1 text-center mt-4 mb-4">
+              From My <span class="sub-2-head-h1"> Blog </span>
+            </h2>
+          </div>
+          
+          <div class="row text-center mt-5 mb-5">
+
+            <div class="banner-final-img-c col-lg-7">
+              <div data-aos="fade-left">
+                <img
+                  class="w-100 sub-img-s"
+                  src="image/g.gif"
+                  alt="Banner Final"
+                />
+              </div>
+            </div>
+
+            <div class="n-p back-img col-lg-5 col-md-6 col-sm-12">
+              <div data-aos="fade-down">
+                <h2 class="banner-head-text-back-imgs sub-heat-text-col">
+                  Our Story
+                </h2>
+                <p>
+                  Founded with a passion for health and a deep appreciation
+                  for traditional Indian ingredients, Golden Fields was born
+                  out of a desire to reconnect with our roots and promote
+                  holistic well-being. Drawing inspiration from the wisdom of
+                  Ayurveda and the rich culinary heritage of India, we
+                  embarked on a journey to create a product that would not
+                  only satisfy hunger but also nurture vitality.
+                </p>
+              </div>
+
+              <div data-aos="fade-up">
+                <div class="mt-5">
+                  <iframe
+                    class="youtube"
+                    width="100%"
+                    height="315"
+                    src="https://www.youtube.com/embed/VIDEO_ID"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+
+
+           
+          </div>
+
+
+
+          <div data-aos="fade-right">
+            <div
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
+            >
+              <h2 class="sub-head-h1 text-center mt-4 mb-4">
+                From My <span class="sub-2-head-h1"> Blog </span>
+              </h2>
+            </div>
+
+            <div class="row text-center mt-5 mb-5">
+              <div class="n-p back-img col-lg-5 col-md-6 col-sm-12">
+                <div data-aos="fade-down">
+                  <h2 class="banner-head-text-back-imgs sub-heat-text-col">
+                    Our Story
+                  </h2>
+                  <p>
+                    Founded with a passion for health and a deep appreciation
+                    for traditional Indian ingredients, Golden Fields was born
+                    out of a desire to reconnect with our roots and promote
+                    holistic well-being. Drawing inspiration from the wisdom of
+                    Ayurveda and the rich culinary heritage of India, we
+                    embarked on a journey to create a product that would not
+                    only satisfy hunger but also nurture vitality.
+                  </p>
+                </div>
+
+                <div data-aos="fade-up">
+                  <div class="mt-5">
+                    <iframe
+                      class="youtube"
+                      width="100%"
+                      height="315"
+                      src="https://www.youtube.com/embed/VIDEO_ID"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+
+              <div class="banner-final-img-c col-lg-7">
+                <div data-aos="fade-left">
+                  <img
+                    class="w-100 sub-img-s"
+                    src="image/4FW5.gif"
+                    alt="Banner Final"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div data-aos="fade-up">
+          <div
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
+            <h2 class="high-quality text-center mt-5 mb-5">
+              High quality <span class="high-quality-2"> Nuts </span>
+            </h2>
+          </div>
+          <img class="w-100 mt-4 mb-4 nutz-gig-img" src="./image/justgif.gif" />
+        </div>
+      </div>
+ 
+    </div>
+
+    
+<!-- cub -->
+<div class="row img-3-centerss text-center mt-5 mb-5 ">
+  <div data-aos="zoom-in">
+      <h2 class="high-quality text-center mt-5 mb-5">Hand Made <span class="high-quality-2">Products</span></h2>
+  </div>
+  
+  <div class="col left-side-text col-lg-3" >
+      <div data-aos="fade-right">
+          <h4 class="text-explain">Stunning Full</h4>
+          <p>The Visual Composer drag-and-drop page builder is packed with all Elated Themes. Setting up your website and creating pages.</p>
+          
+          <h4 class="text-explain">Stunning Full</h4>
+          <p>The Visual Composer drag-and-drop page builder is packed with all Elated Themes. Setting up your website and creating pages.</p>
+          
+          <h4 class="text-explain">Stunning Full</h4>
+          <p>The Visual Composer drag-and-drop page builder is packed with all Elated Themes. Setting up your website and creating pages.</p>
+      </div>
+  </div>
+  
+  <div class="col-lg-5">
+      <img class="img-text-explain img-fluid w-100" src="./image/nutz d.gif">
+  </div>
+  
+  <div class="col-lg-3">
+      <div data-aos="fade-left">
+          <h4 class="text-explain">Stunning Full</h4>
+          <p>The Visual Composer drag-and-drop page builder is packed with all Elated Themes. Setting up your website and creating pages.</p>
+          
+          <h4 class="text-explain">Stunning Full</h4>
+          <p>The Visual Composer drag-and-drop page builder is packed with all Elated Themes. Setting up your website and creating pages.</p>
+          
+          <h4 class="text-explain">Stunning Full</h4>
+          <p>The Visual Composer drag-and-drop page builder is packed with all Elated Themes. Setting up your website and creating pages.</p>
+      </div>
+  </div>
+</div>
+
+
+    <!-- products -->
+    <div class="total-oroduct-back">
+      <div class="container">
+
+
+      <div data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000">
+ 
+ <div data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000">
+         <h2 class='type-writing mb-5'>
+           Natural <span class='type2-writing mx-3'>Ingredients</span>
+         </h2>
+         </div>
+
+      <!-- Pills navs -->
+      <div style="display: flex;justify-content: center;align-items: center;">
+      <ul class="nav nav-pills mb-3" id="ex1" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a
+            data-bs-toggle="pill"
+            class="nav-link active"
+            id="ex1-tab-1"
+            href="#ex1-pills-1"
+            role="tab"
+            aria-controls="ex1-pills-1"
+            aria-selected="true"
+            >Tab 1</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            data-bs-toggle="pill"
+            class="nav-link"
+            id="ex1-tab-2"
+            href="#ex1-pills-2"
+            role="tab"
+            aria-controls="ex1-pills-2"
+            aria-selected="false"
+            >Tab 2</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            data-bs-toggle="pill"
+            class="nav-link"
+            id="ex1-tab-3"
+            href="#ex1-pills-3"
+            role="tab"
+            aria-controls="ex1-pills-3"
+            aria-selected="false"
+            >Tab 3</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            data-bs-toggle="pill"
+            class="nav-link"
+            id="ex1-tab-4"
+            href="#ex1-pills-4"
+            role="tab"
+            aria-controls="ex1-pills-4"
+            aria-selected="false"
+            >Tab 4</a
+          >
+        </li>
+      </ul>
+    </div>
+    
+      <!-- Pills content -->
+      <div class="tab-content" id="ex1-content">
+        <div
+          class="tab-pane fade show active"
+          id="ex1-pills-1"
+          role="tabpanel"
+          aria-labelledby="ex1-tab-1"
+        >
+<!-- 1set row -->
+        <div class=' row pa-22'>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class='main-product-div-col'>
+              <img class='img-fluid img-size mt-2 mb-2' src="image/thinai.jpg" alt="Image 1" />
+              <div class="overlay">ssssssss</div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-lg-3 col-md-6 col-sm-12">
+            <div class='main-product-div-col'>
+              <img class='img-fluid img-size mt-2 mb-2' src="image/ragi.jpg" alt="Image 2" />
+              <div class="overlay">Finger millet (Ragi):</div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-lg-3 col-md-6 col-sm-12">
+            <div class='main-product-div-col'>
+              <img class='img-fluid img-size mt-2 mb-2' src="image/kambu.webp"alt="Image 3" />
+              <div class="overlay">aaaaaaaa</div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-lg-3 col-md-6 col-sm-12">
+            <div class='main-product-div-col'>
+              <img class='img-fluid img-size  mt-2 mb-2' src="image/solam-01.jpg" alt="Image 4" />
+              <div class="overlay">qqqqqqqqq</div>
+            </div>
+          </div>
+        </div>
+       <!-- 2nd row  -->
+        <div class=' row pa-22 mt-5'>
+          <div class="col-lg-3  col-lg-3 col-md-6 col-sm-12">
+            <div class='main-product-div-col'>
+              <img class='img-fluid img-size mt-2 mb-2 ' src="image/kuthiraivali.webp" alt="Image 5" />
+              <div class="overlay">Pearl millet</div>
+            </div>
+          </div>
+          <div class="col-lg-3  col-lg-3 col-md-6 col-sm-12">
+            <div class='main-product-div-col'>
+              <img class='img-fluid img-size  mt-2 mb-2 ' src="image/varagu_rice.jpg" alt="Image 6" />
+              <div class="overlay">qqqqqtrruqqqq</div>
+            </div>
+          </div>
+          <div class="col-lg-3  col-lg-3 col-md-6 col-sm-12">
+            <div class='main-product-div-col'>
+              <img class='img-fluid img-size  mt-2 mb-2 ' src="image/samiy.jpg" alt="Image 7" />
+              <div class="overlay">qqqq</div>
+            </div>
+          </div>
+        </div>
+
+
+        </div>
+        <div class="tab-pane fade" id="ex1-pills-2" role="tabpanel" aria-labelledby="ex1-tab-2">
+          <!-- 2set row -->
+        <div class=' row pa-22'>
+          <div class="col-lg-3  col-lg-3 col-md-6 col-sm-12">
+            <div class='main-product-div-col'>
+              <img class='img-fluid img-size mt-2 mb-2' src="image/thinai.jpg" alt="Image 1" />
+              <div class="overlay">ssssssss</div>
+            </div>
+          </div>
+          <div class="col-lg-3  col-lg-3 col-md-6 col-sm-12">
+            <div class='main-product-div-col'>
+              <img class='img-fluid img-size mt-2 mb-2' src="image/ragi.jpg" alt="Image 2" />
+              <div class="overlay">Finger millet (Ragi):</div>
+            </div>
+          </div>
+          <div class="col-lg-3  col-lg-3 col-md-6 col-sm-12">
+            <div class='main-product-div-col'>
+              <img class='img-fluid img-size mt-2 mb-2' src="image/kambu.webp"alt="Image 3" />
+              <div class="overlay">aaaaaaaa</div>
+            </div>
+          </div>
+          <div class="col-lg-3  col-lg-3 col-md-6 col-sm-12">
+            <div class='main-product-div-col'>
+              <img class='img-fluid img-size  mt-2 mb-2' src="image/solam-01.jpg" alt="Image 4" />
+              <div class="overlay">qqqqqqqqq</div>
+            </div>
+          </div>
+        </div>
+       <!-- 2nd row  -->
+        <div class=' row pa-22 mt-5'>
+          <div class="col-lg-3  col-lg-3 col-md-6 col-sm-12">
+            <div class='main-product-div-col'>
+              <img class='img-fluid img-size mt-2 mb-2 ' src="image/kuthiraivali.webp" alt="Image 5" />
+              <div class="overlay">Pearl millet</div>
+            </div>
+          </div>
+          <div class="col-lg-3  col-lg-3 col-md-6 col-sm-12">
+            <div class='main-product-div-col'>
+              <img class='img-fluid img-size  mt-2 mb-2 ' src="image/varagu_rice.jpg" alt="Image 6" />
+              <div class="overlay">qqqqqtrruqqqq</div>
+            </div>
+          </div>
+          <div class="col-lg-3  col-lg-3 col-md-6 col-sm-12">
+            <div class='main-product-div-col'>
+              <img class='img-fluid img-size  mt-2 mb-2 ' src="image/samiy.jpg" alt="Image 7" />
+              <div class="overlay">qqqq</div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="tab-pane fade" id="ex1-pills-3" role="tabpanel" aria-labelledby="ex1-tab-3">
+<!-- 3set row -->
+<div class=' row pa-22'>
+  <div class="col-lg-3  col-lg-3 col-md-6 col-sm-12">
+    <div class='main-product-div-col'>
+      <img class='img-fluid img-size mt-2 mb-2' src="image/thinai.jpg" alt="Image 1" />
+      <div class="overlay">ssssssss</div>
+    </div>
+  </div>
+  <div class="col-lg-3  col-lg-3 col-md-6 col-sm-12">
+    <div class='main-product-div-col'>
+      <img class='img-fluid img-size mt-2 mb-2' src="image/ragi.jpg" alt="Image 2" />
+      <div class="overlay">Finger millet (Ragi):</div>
+    </div>
+  </div>
+  <div class="col-lg-3  col-lg-3 col-md-6 col-sm-12">
+    <div class='main-product-div-col'>
+      <img class='img-fluid img-size mt-2 mb-2' src="image/kambu.webp"alt="Image 3" />
+      <div class="overlay">aaaaaaaa</div>
+    </div>
+  </div>
+  <div class="col-lg-3  col-lg-3 col-md-6 col-sm-12">
+    <div class='main-product-div-col'>
+      <img class='img-fluid img-size  mt-2 mb-2' src="image/solam-01.jpg" alt="Image 4" />
+      <div class="overlay">qqqqqqqqq</div>
+    </div>
+  </div>
+</div>
+<!-- 2nd row  -->
+<div class=' row pa-22 mt-5'>
+  <div class="col-lg-3  col-lg-3 col-md-6 col-sm-12">
+    <div class='main-product-div-col'>
+      <img class='img-fluid img-size mt-2 mb-2 ' src="image/kuthiraivali.webp" alt="Image 5" />
+      <div class="overlay">Pearl millet</div>
+    </div>
+  </div>
+  <div class="col-lg-3  col-lg-3 col-md-6 col-sm-12">
+    <div class='main-product-div-col'>
+      <img class='img-fluid img-size  mt-2 mb-2 ' src="image/varagu_rice.jpg" alt="Image 6" />
+      <div class="overlay">qqqqqtrruqqqq</div>
+    </div>
+  </div>
+  <div class="col-lg-3  col-lg-3 col-md-6 col-sm-12">
+    <div class='main-product-div-col'>
+      <img class='img-fluid img-size  mt-2 mb-2 ' src="image/samiy.jpg" alt="Image 7" />
+      <div class="overlay">qqqq</div>
+    </div>
+  </div>
+</div>        </div>
+        <div class="tab-pane fade" id="ex1-pills-4" role="tabpanel" aria-labelledby="ex1-tab-4">
+<!-- 4set row -->
+<div class=' row pa-22'>
+  <div class="col-lg-3  col-lg-3 col-md-6 col-sm-12">
+    <div class='main-product-div-col'>
+      <img class='img-fluid img-size mt-2 mb-2' src="image/thinai.jpg" alt="Image 1" />
+      <div class="overlay">ssssssss</div>
+    </div>
+  </div>
+  <div class="col-lg-3  col-lg-3 col-md-6 col-sm-12">
+    <div class='main-product-div-col'>
+      <img class='img-fluid img-size mt-2 mb-2' src="image/ragi.jpg" alt="Image 2" />
+      <div class="overlay">Finger millet (Ragi):</div>
+    </div>
+  </div>
+  <div class="col-lg-3  col-lg-3 col-md-6 col-sm-12">
+    <div class='main-product-div-col'>
+      <img class='img-fluid img-size mt-2 mb-2' src="image/kambu.webp"alt="Image 3" />
+      <div class="overlay">aaaaaaaa</div>
+    </div>
+  </div>
+  <div class="col-lg-3 col-lg-3 col-md-6 col-sm-12">
+    <div class='main-product-div-col'>
+      <img class='img-fluid img-size  mt-2 mb-2' src="image/solam-01.jpg" alt="Image 4" />
+      <div class="overlay">qqqqqqqqq</div>
+    </div>
+  </div>
+</div>
+<!-- 2nd row  -->
+<div class=' row pa-22 mt-5'>
+  <div class="col-lg-3  col-lg-3 col-md-6 col-sm-12">
+    <div class='main-product-div-col'>
+      <img class='img-fluid img-size mt-2 mb-2 ' src="image/kuthiraivali.webp" alt="Image 5" />
+      <div class="overlay">Pearl millet</div>
+    </div>
+  </div>
+  <div class="col-lg-3  col-lg-3 col-md-6 col-sm-12">
+    <div class='main-product-div-col'>
+      <img class='img-fluid img-size  mt-2 mb-2 ' src="image/varagu_rice.jpg" alt="Image 6" />
+      <div class="overlay">qqqqqtrruqqqq</div>
+    </div>
+  </div>
+  <div class="col-lg-3  col-lg-3 col-md-6 col-sm-12">
+    <div class='main-product-div-col'>
+      <img class='img-fluid img-size  mt-2 mb-2 ' src="image/samiy.jpg" alt="Image 7" />
+      <div class="overlay">qqqq</div>
+    </div>
+  </div>
+</div>        </div>
+      </div>
+      <!-- Pills content -->
+
+    </div>
+
+    </div>
+  </div>
+<!-- you-model -->
+
+<div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500"> 
+  <div class='total-you-bk-1'>
+    <div class='container-fluid ad-you-back-img'>
+      <div class='ad-you-back-content'>
+        <div class='mt-5 mb-5'>
+          <!-- Use inline style to apply the text color -->
+          <h2 class='mt-5 mb-5 you-contact text-center' >
+            High Quality <span class='you-contact-2 text-center'>Healthy</span> <br /> And Delivery Services
+          </h2>
+          <div>
+            <div data-aos="fade-right">
+              <p class="i-cons-text-01 mx-3 text-center"><HiOutlineMail class="i-cons-01 text-center" /> golden@gmail.com</p> 
+            </div>
+            <div data-aos="fade-left">
+              <p class="i-cons-text-01 mx-3 text-center"><FaWhatsapp class="i-cons-01 text-center" /> (+91) 99887 74455</p>
+            </div>
+          </div>
+          <div class='you-img-create-1'>
+            <div data-aos="fade-up">
+              <img class='img-fluid you-img-create' src="./image/tasty_image-1.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- footer -->
+
+      <!-- <div style="display: flex;justify-content: space-evenly;" class="container-fluid">
+        <div class="row">
+          <div class="col-lg-2">
+            <img class="footer-img-size mx-4" src="./image/Front.png" alt="">
+          </div>
+          <div class="col-lg-2">
+            <img class="footer-img-size  mx-4" src="./image/Side01.png" alt="">
+          </div>
+
+          <div class="col-lg-2">
+            <img class="footer-img-size  mx-4" src="./image/Front.png" alt="">
+          </div>
+
+          <div class="col-lg-2">
+<img class="footer-img-size  mx-4" src="./image/Side02.png" alt="">
+          </div>
+
+          <div class="col-lg-2">
+            <img class="footer-img-size  mx-4" src="./image/back.png" alt="">
+          </div>
+
+
+          <div class="col-lg-2">
+            <img class="footer-img-size  mx-4" src="./image/back.png" alt="">
+          </div>
+
+        </div>
+      </div> -->
+      <div data-aos="flip-up" data-aos-duration="1500">
+        <footer class="text-center text-white footer-total-bk" style="background-color: rgb(255, 228, 178);">
+          <div class="container p-4">
+            <section>
+              <div class="row">
+                <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                  <a href="#">
+                    <div data-aos="fade-right">
+                      <img class="img-fluid footer-img-size" src="./image/Front.png" alt="footer img1" />
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                  <a href="#">
+                    <div data-aos="fade-right">
+                      <img class="img-fluid footer-img-size" src="./image/Side01.png" alt="footer img1" />
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                  <a href="#">
+                    <div data-aos="fade-right">
+                      <img class="img-fluid footer-img-size" src="./image/back.png" alt="footer img1" />
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                  <a href="#">
+                    <div data-aos="fade-left">
+                      <img class="img-fluid footer-img-size" src="./image/Front.png" alt="footer img1" />
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                  <a href="#">
+                    <div data-aos="fade-left">
+                      <img class="img-fluid footer-img-size" src="./image/Side02.png" alt="footer img1" />
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                  <a href="#">
+                    <div data-aos="fade-left">
+                      <img class="img-fluid footer-img-size" src="./image/back.png" alt="footer img1" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="text-center p-3 footer-final-img-test" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2024 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">
+              goldenfields.com
+            </a>
+            <!-- Butterfly image with onClick handler -->
+            <div class="butter-fly" onclick="scrollToTop()" style="cursor: pointer;">
+              <img class="butter-fly-1" src="./image/gg.gif" alt="Butterfly" />
+            </div>
+          </div>
+        </footer>
+      </div>
+    
+    
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- Initialize AOS -->
+    <script>
+      AOS.init();
+    </script>
+
+
+<!-- nav-scrool -->
+
+<script>
+$(document).ready(function() {
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 0) {
+      $('#navbar').addClass('navbar-scrolled');
+    } else {
+      $('#navbar').removeClass('navbar-scrolled');
+    }
+  });
+});
+
+</script>
+
+<!-- butter-fly -->
+
+
+<script>
+  function scrollToTop() {
+      window.scrollTo({
+          top: 0,
+          behavior: 'smooth' // Smooth scrolling animation
+      });
+  }
+</script>
+
+  </body>
+</html>
