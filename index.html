@@ -52,6 +52,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Raleway&display=swap"
         rel="stylesheet">
 
+
+<!-- owel-carosal -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
   </head>
   <body>
     <style>
@@ -74,6 +83,7 @@ color:black;
 }
 .nav-image{
     height: 100px;
+    width: 100%;
 }
 .nav-f-all{
     font-weight: bold;
@@ -99,9 +109,8 @@ color:black;
   }
   .navbar-toggler-icon {
     border: none; /* Remove border around nav bar icon */
-  }.nav-image{
-    height: 100px;
-}
+  }
+  
 .nav-f-all{
     font-weight: bold;
     font-size: 20px;
@@ -324,7 +333,7 @@ color:black;
     justify-content: center;
     align-items: center;
     /* border-radius: 50%; */
-    border-radius: 44px;
+    /* border-radius: 44px; */
 
 }
 
@@ -552,6 +561,13 @@ background-size: cover;
 
       /* Media query for screens smaller than 768 pixels */
       @media screen and (max-width: 767px) {
+
+        body{
+          overflow-x: hidden;
+        }
+
+
+
         .main-header-back {
           width: 100%;
           height: 200px;
@@ -621,7 +637,7 @@ background-size: cover;
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 44px;
+        /* border-radius: 44px; */
 
     }
 
@@ -727,6 +743,11 @@ display: none;
 
       /* Media query for screens between 768 and 1024 pixels */
       @media screen and (min-width: 768px) and (max-width: 1023px) {
+
+        body{
+          overflow-x: hidden;
+        }
+
         .main-header-back {
           width: 280px;
           height: 200px;
@@ -812,6 +833,7 @@ display: none;
         justify-content: center;
         align-items: center; 
     }
+    
 
     /* products */
 
@@ -891,9 +913,21 @@ width: 200px;
       /* Media query for screens larger than 1024 pixels */
       @media screen and (min-width: 1024px) {
       }
+      
     </style>
 
 <!-- nav-bar -->
+ <!-- <nav s class="navbar  fixed-top ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img  class="nav-image" src="./image/Logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+    </a>
+  </div>
+</nav>  -->
+
+
+<!-- <img  style="position:fixed;; height: 80px; width: 140px;" class="m-4" src="./image/Logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top"> -->
+
 <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary nav-back fixed-top" id="navbar">
 
   <div class="container-fluid">
@@ -931,7 +965,7 @@ width: 200px;
     <!-- carousel -->
     <div
       id="carouselExampleCaptions"
-      class="carousel slide"
+      class="carousel slide  col-lg-12 col-md-12 col-sm-12"
       data-bs-ride="carousel"
     >
       <div class="carousel-indicators">
@@ -964,9 +998,14 @@ width: 200px;
           </video>
           <div class="carousel-caption d-none d-md-block">
             <div class="main-h1-s">
-              <h1 class="main-h1-text">Golden Fields</h1>
+              <h1 class="main-h1-text">Golden Fields</h1> 
 
-              <p class="main-p-1">A Blend of Goodness</p>
+              <p class="main-p-1">A Blend of Goodness</p> 
+<div style="display: flex; justify-content: center; align-items: center;">
+  <a href="https://youtu.be/FCAOXh4cyhw?si=9INx71UySKLtXmK6">
+              <i style="font-size: 80px; color:orange;" class="fa-solid fa-circle-play"></i>
+            </a>
+            </div>
             </div>
           </div>
         </div>
@@ -979,6 +1018,12 @@ width: 200px;
             <div class="main-head-s-2">
               <h5 class="main-header-text-2">Multi - Grain Superfood</h5>
               <p>100% Natural & Wholesome</p>
+
+              <div style="display: flex; justify-content: center; align-items: center;">
+                <a href="https://youtu.be/mzHTSZEPY20?si=FH7Voic8pmKP3IY6">
+                            <i style="font-size: 80px; color:orange;" class="fa-solid fa-circle-play"></i>
+                          </a>
+                          </div>
             </div>
           </div>
         </div>
@@ -1008,7 +1053,7 @@ width: 200px;
     <div class="container-fluid dry-back-img">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-6  col-md-4 col-sm-12">
             <div data-aos="fade-right" data-aos-duration="1000">
               <img
                 class="img-fluid dry-img-1 mt-5 mb-5"
@@ -1018,7 +1063,7 @@ width: 200px;
             </div>
           </div>
 
-          <div class="col-lg-6">
+          <div class="col-lg-6  col-md-4 col-sm-12">
             <div data-aos="fade-left">
               <h1 class="dry-h1 mt-5">
                 We Have <span class="dry-h-1-s">35 Years</span> Of Experience
@@ -1208,16 +1253,9 @@ width: 200px;
 
               <div data-aos="fade-up">
                 <div class="mt-5">
-                  <iframe
-                    class="youtube"
-                    width="100%"
-                    height="315"
-                    src="https://www.youtube.com/embed/VIDEO_ID"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
+                
+                  <iframe                   style="border-radius: 44px;"
+                  width="100%" height="315" src="https://www.youtube.com/embed/LnQPVGUTTK0?si=iy_yX8haETAmYcqu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
               </div>
             </div>
@@ -1258,16 +1296,9 @@ width: 200px;
 
                 <div data-aos="fade-up">
                   <div class="mt-5">
-                    <iframe
-                      class="youtube"
-                      width="100%"
-                      height="315"
-                      src="https://www.youtube.com/embed/VIDEO_ID"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
-                    ></iframe>
+  
+
+                    <iframe  style="border-radius: 44px;" width="100%" height="315" src="https://www.youtube.com/embed/NQMFBhKyyuY?si=X5_gUqB-wERVo0el" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                   </div>
                 </div>
               </div>
@@ -1340,6 +1371,37 @@ width: 200px;
 </div>
 
 
+<!-- monial -->
+
+<div data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000">
+         <h2 class='type-writing mb-5'>
+
+<h2 class="sub-head-h1 text-center mt-4 mb-4">
+  Testi<span class="sub-2-head-h1">monials</span>
+</h2>
+
+</div>
+
+
+<div class="container  mb-5">
+  <div data-aos="zoom-out-down">
+
+  <div class="owl-carousel owl-theme  mt-5 ">
+    <div style="width: 100%; height: 340px;" class="item-video mx-2" data-merge="2"><a class="owl-video" href="https://youtu.be/FCAOXh4cyhw?si=Je6AZkeSLj_x2YKm"></a></div>
+    <div style="width: 100%; height: 340px;" class="item-video mx-2" data-merge="2"><a class="owl-video" href="https://youtu.be/mzHTSZEPY20?si=Z6rlUMy4bYu1BYMD"></a></div>
+    <div style="width: 100%; height: 340px;" class="item-video  mx-2" data-merge="2"><a class="owl-video" href="https://youtu.be/LnQPVGUTTK0?si=7Um1dzhqK8CoNqo5"></a></div>
+    <div style="width: 100%; height: 340px;" class="item-video mx-2" data-merge="2"><a class="owl-video" href="https://youtu.be/NQMFBhKyyuY?si=L_uF4ogo6WKIFTFk"></a></div>
+    
+    <div style="width: 100%; height: 340px;" class="item-video  mx-2" data-merge="2"><a class="owl-video" href="https://youtu.be/uXQ9rBlP5EI?si=r-FCJ8I9BCXrrQ9h"></a></div>
+    <div style="width: 100%; height: 340px;" class="item-video  mx-2" data-merge="2"><a class="owl-video" href="https://youtu.be/zl5_YXSSpDk?si=gpgzZbpD13LVgW0d"></a></div>
+    <div style="width: 100%; height: 340px;" class="item-video  mx-2" data-merge="2"><a class="owl-video" href="https://youtu.be/DTEf20-XvrY?si=PIz8zfm6ABPb3v05"></a></div>
+  </div>
+</div>
+  </div>
+
+
     <!-- products -->
     <div class="total-oroduct-back">
       <div class="container">
@@ -1362,8 +1424,9 @@ width: 200px;
       <ul class="nav nav-pills mb-3" id="ex1" role="tablist">
         <li class="nav-item" role="presentation">
           <a
+          style="color: #9f4103;"
             data-bs-toggle="pill"
-            class="nav-link active"
+            class="nav-link active  top-nav-colour"
             id="ex1-tab-1"
             href="#ex1-pills-1"
             role="tab"
@@ -1374,8 +1437,10 @@ width: 200px;
         </li>
         <li class="nav-item" role="presentation">
           <a
+          style="color: #9f4103;"
+
             data-bs-toggle="pill"
-            class="nav-link"
+            class="nav-link  top-nav-colour"
             id="ex1-tab-2"
             href="#ex1-pills-2"
             role="tab"
@@ -1386,8 +1451,10 @@ width: 200px;
         </li>
         <li class="nav-item" role="presentation">
           <a
+          style="color: #9f4103;"
+
             data-bs-toggle="pill"
-            class="nav-link"
+            class="nav-link  top-nav-colour"
             id="ex1-tab-3"
             href="#ex1-pills-3"
             role="tab"
@@ -1398,8 +1465,10 @@ width: 200px;
         </li>
         <li class="nav-item" role="presentation">
           <a
+          style="color: #9f4103;"
+
             data-bs-toggle="pill"
-            class="nav-link"
+            class="nav-link  top-nav-colour"
             id="ex1-tab-4"
             href="#ex1-pills-4"
             role="tab"
@@ -1689,7 +1758,7 @@ width: 200px;
         </div>
       </div> -->
       <div data-aos="flip-up" data-aos-duration="1500">
-        <footer class="text-center text-white footer-total-bk" style="background-color: rgb(255, 228, 178);">
+        <footer class="text-center text-white footer-total-bk" style="">
           <div class="container p-4">
             <section>
               <div class="row">
@@ -1755,9 +1824,9 @@ width: 200px;
     
     
 
-
+<!-- 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <!-- Initialize AOS -->
@@ -1769,18 +1838,28 @@ width: 200px;
 <!-- nav-scrool -->
 
 <script>
-$(document).ready(function() {
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > 0) {
-      $('#navbar').addClass('navbar-scrolled');
-    } else {
-      $('#navbar').removeClass('navbar-scrolled');
-    }
+  $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+      loop:true,
+      margin:10,
+      nav:true,
+      autoplay:true,
+      autoplayTimeout:3000,
+      autoplayHoverPause:true,
+      responsive:{
+        0:{
+          items:1
+        },
+        600:{
+          items:3
+        },
+        1000:{
+          items:5
+        }
+      }
+    });
   });
-});
-
 </script>
-
 <!-- butter-fly -->
 
 
@@ -1791,6 +1870,31 @@ $(document).ready(function() {
           behavior: 'smooth' // Smooth scrolling animation
       });
   }
+</script>
+
+
+
+<!-- owl-carosal -->
+
+<script>
+
+$('.owl-carousel').owlCarousel({
+        items:1,
+        merge:true,
+        loop:true,
+        margin:10,
+        video:true,
+        lazyLoad:true,
+        center:true,
+        responsive:{
+            480:{
+                items:2
+            },
+            600:{
+                items:4
+            }
+        }
+    })
 </script>
 
   </body>
