@@ -3,47 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Owl Carousel with Videos</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <title>Custom Mouse Pointer</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      cursor: none; /* Hide the default cursor */
+    }
+
+    #custom-cursor {
+      display: none; /* Hide custom cursor by default */
+      position: fixed;
+      width: 100px; /* Set the width of your cursor */
+      height: auto; /* Set the height of your cursor */
+      pointer-events: none; /* Ensure the custom cursor doesn't interfere with mouse interactions */
+      z-index: 9999; /* Ensure the custom cursor stays on top of other elements */
+    }
+
+    #custom-cursor.active {
+      display: block; /* Show custom cursor when active */
+    }
+
+    #custom-cursor img {
+      width: 100%; /* Make the image fill the container */
+      height: auto; /* Maintain aspect ratio */
+    }
+  </style>
 </head>
 <body>
-<div class="container">
-<div class="owl-carousel owl-theme">
-  <div style="width: 100%; height: 340px;" class="item-video" data-merge="2"><a class="owl-video" href="https://youtube.com/shorts/yDG27Bldm74?si=Gj5XFcU2wgVf2Q1I"></a></div>
-  <div style="width: 100%; height: 340px;" class="item-video" data-merge="2"><a class="owl-video" href="https://youtube.com/shorts/yDG27Bldm74?si=Gj5XFcU2wgVf2Q1I"></a></div>
-  <div style="width: 100%; height: 340px;" class="item-video" data-merge="2"><a class="owl-video" href="https://youtube.com/shorts/yDG27Bldm74?si=Gj5XFcU2wgVf2Q1I"></a></div>
-  <div style="width: 100%; height: 340px;" class="item-video" data-merge="2"><a class="owl-video" href="https://www.youtube.com/watch?v=oy18DJwy5lI"></a></div>
-  <div style="width: 100%; height: 340px;" class="item-video" data-merge="2"><a class="owl-video" href="https://www.youtube.com/watch?v=H3jLkJrhHKQ"></a></div>
-  <div style="width: 100%; height: 340px;" class="item-video" data-merge="2"><a class="owl-video" href="https://www.youtube.com/watch?v=g3J4VxWIM6s"></a></div>
-  <div style="width: 100%; height: 340px;" class="item-video" data-merge="2"><a class="owl-video" href="https://www.youtube.com/watch?v=0fhoIate4qI"></a></div>
-  <div style="width: 100%; height: 340px;" class="item-video" data-merge="2"><a class="owl-video" href="https://www.youtube.com/watch?v=EF_kj2ojZaE"></a></div>
+
+<div id="custom-cursor">
+  <img src="./image/full_body_cursor.png" alt="Custom Cursor">
 </div>
+
+<div class="content">
+  <!-- Your content here -->
+  <h2>qqqqqqq</h2>
+  <h2>qqqqqqq</h2>
+  <h2>qqqqqqq</h2>
+  <h2>qqqqqqq</h2>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
 <script>
-  $(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
-      loop:true,
-      margin:10,
-      nav:true,
-      autoplay:true,
-      autoplayTimeout:3000,
-      autoplayHoverPause:true,
-      responsive:{
-        0:{
-          items:1
-        },
-        600:{
-          items:3
-        },
-        1000:{
-          items:5
-        }
-      }
-    });
-  });
+document.addEventListener('mousemove', function (e) {
+  var cursor = document.getElementById('custom-cursor');
+  var content = document.querySelector('.content');
+
+  // Check if mouse is within the full body area
+  if (e.target === content || content.contains(e.target)) {
+    cursor.classList.add('active'); // Show custom cursor
+  } else {
+    cursor.classList.remove('active'); // Hide custom cursor
+  }
+
+  cursor.style.left = e.pageX + 'px';
+  cursor.style.top = e.pageY + 'px';
+});
 </script>
 
 </body>
